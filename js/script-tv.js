@@ -26,6 +26,8 @@ for (let index = 0; index < 12; index++) {
 
 function HoverStreamCardEnter(e, channel)
 {
+    if (e.timeout)
+        clearTimeout(e.timeout)
     if (e.shown)
         return ;
     e.querySelector('iframe').src = `https://player.twitch.tv/?channel=${channel}&parent=cyteui.github.io`;
