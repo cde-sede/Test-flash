@@ -47,4 +47,3 @@ for (let index = 0; index < 12; index++) {
 // .catch(error => console.error(error));
 
 
-https://static-cdn.jtvnw.net/jtv_user_pictures/e0cb640e-7ba7-4603-82ed-6b404c0b728d-channel_offline_image-1920x1080.png"
