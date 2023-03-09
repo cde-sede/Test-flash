@@ -8,7 +8,7 @@ for (let index = 0; index < 12; index++) {
     card.style.opacity = 0;
     card.innerHTML = `
         <a href="">
-            <div onmouseenter="HoverStreamCardEnter(this, 'mistermv')" onmouseexit="HoverStreamCardExit(this)" data-scroll data-scroll-speed="1" class="tv" id="p1">
+            <div onmouseenter="HoverStreamCardEnter(this, 'mistermv')" onmouseleave="HoverStreamCardExit(this)" data-scroll data-scroll-speed="1" class="tv" id="p1">
                     <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" ></iframe>
                     <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_mistermv.jpg" frameborder="0" allowfullscreen="true" scrolling="no" ></img>
             </div>
