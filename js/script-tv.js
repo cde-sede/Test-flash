@@ -1,11 +1,11 @@
-const cardList = document.querySelector('.card-tv')
+const cardList = document.querySelector('.card-tv');
 
 for (let index = 0; index < 12; index++) {
-    const card = document.createElement('div')
-    card.classList.add('tv-card')
-    card.classList.add('appear')
-    card.style.animationDelay = `${index * 0.05}s`
-    card.style.opacity = 0
+    const card = document.createElement('div');
+    card.classList.add('tv-card');
+    card.classList.add('appear');
+    card.style.animationDelay = `${index * 0.05}s`;
+    card.style.opacity = 0;
     card.innerHTML = `
         <a href="">
             <div onmouseover="HoverStreamCard(this, 'mistermv')" data-scroll data-scroll-speed="1" class="tv" id="p1">
@@ -21,10 +21,10 @@ for (let index = 0; index < 12; index++) {
             </div>
         </a>
     `
-    cardList.appendChild(card)
+    cardList.appendChild(card);
 }
 
 function HoverStreamCard(e, channel)
 {
-    e.firstChild.src = `https://player.twitch.tv/?channel=${channel}&parent=cyteui.github.io`;
+    e.querySelector('iframe').src = `https://player.twitch.tv/?channel=${channel}&parent=cyteui.github.io`;
 }
