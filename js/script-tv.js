@@ -1,4 +1,4 @@
-const cardList = document.querySelector('.card-tv')https://github.com/cyteui/Test-flash/blob/main/js/script-tv.js
+const cardList = document.querySelector('.card-tv')
 
 for (let index = 0; index < 12; index++) {
     const card = document.createElement('div')
