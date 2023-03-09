@@ -9,7 +9,7 @@ for (let index = 0; index < 12; index++) {
     card.innerHTML = `
         <a href="">
             <div data-scroll data-scroll-speed="1" class="tv" id="p1">
-                    <iframe src="https://player.twitch.tv/?channel=ponce&parent=https://cyteui.github.io/" frameborder="0" allowfullscreen="true" scrolling="no" ></iframe>
+                    <iframe src="https://player.twitch.tv/?channel=ponce&parent=cyteui.github.io" frameborder="0" allowfullscreen="true" scrolling="no" ></iframe>
                     <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_gobgg.jpg" frameborder="0" allowfullscreen="true" scrolling="no" ></img>
             </div>
             <div class="icone">
