@@ -26,7 +26,10 @@ for (let index = 0; index < 12; index++) {
 
 function HoverStreamCardEnter(e, channel)
 {
+    if (e.shown)
+        return ;
     e.querySelector('iframe').src = `https://player.twitch.tv/?channel=${channel}&parent=cyteui.github.io`;
+    e.shown = true;
 }
 function HoverStreamCardExit(e)
 {
@@ -34,5 +37,6 @@ function HoverStreamCardExit(e)
         clearTimeout(e.timeout);
     e.timeout = setTimeout(function (){
         e.querySelector('iframe').src = '';
+        e.shown = false;
     }, 1000);
 }
